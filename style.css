@@ -1,0 +1,157 @@
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Warna latar belakang biru gelap */
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Header & Menu */
+header {
+    background-color: #1e293b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header h2 {
+    color: #38bdf8;
+}
+
+header nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a:hover {
+    color: #38bdf8;
+}
+
+/* Bagian Beranda (Hero) */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #1e3a8a, #0f172a);
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #94a3b8;
+}
+
+/* Wadah Utama */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+/* Grid Produk (List Barang) */
+.grid-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.kartu {
+    background-color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.kartu img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.harga {
+    color: #38bdf8;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Styling Tombol Beli yang diubah jadi Tautan (Link) */
+.btn-beli {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.btn-beli:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0b0f19;
+    color: #64748b;
+    margin-top: 40px;
+}
+
+/* Styling Sosial Media dengan Logo di Header */
+.header-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Jarak antar sosial media */
+    margin-top: 5px;
+}
+
+.social-links a {
+    color: #94a3b8; /* Warna abu-abu lembut */
+    font-size: 0.85rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara logo dan teks sosial media */
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #38bdf8; /* Berubah jadi biru terang saat disorot kursor */
+}
